@@ -6,11 +6,15 @@ public class Carro {
 	
 	
 	void acelerar() {
-		motor.fatorDeInjecao += 0.2;
+		if(motor.fatorDeInjecao < 2.8) {
+			motor.fatorDeInjecao += 0.2;
+		}
 	}
 	
 	void frear() {
-		motor.fatorDeInjecao -= 0.2;
+		if(motor.fatorDeInjecao > 0.4) {
+			motor.fatorDeInjecao -= 0.2;
+		}
 	}
 	
 	void ligar() {

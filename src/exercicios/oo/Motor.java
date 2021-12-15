@@ -2,6 +2,7 @@ package exercicios.oo;
 
 public class Motor {
 
+	
 	boolean ligado = false;
 	double fatorDeInjecao = 1.0;
 	
