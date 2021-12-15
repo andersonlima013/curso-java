@@ -12,4 +12,14 @@ public class Compra {
 		itens.add(new Item(nome, quantidade, preco)); 
 
 	}
+	
+	double somaTotal() {
+		double total = 0;
+		
+		for(Item item: itens) {
+			total += (item.preco * item.quantidade);
+		}
+		
+		return total;
+	}
 }
