@@ -2,8 +2,12 @@ package exercicios.oo;
 
 public class Carro {
 
-	Motor motor = new Motor();
 	
+	// FAZENDO UMA RELAÇÃO BIDIRECIONAL, ONDE O CARRO TEM UM MOTOR E O MOTOR TEM UM CARRO.
+	final Motor motor; // constante
+	Carro(){
+		this.motor = new Motor(this);
+	}
 	
 	void acelerar() {
 		if(motor.fatorDeInjecao < 2.8) {

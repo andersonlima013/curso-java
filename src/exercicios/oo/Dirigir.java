@@ -33,6 +33,9 @@ public class Dirigir {
 		
 		System.out.println(c1.motor.giros());
 		
+		// DEVIDO A RELAÇÃO BIDIRECIONAL, COISAS ASSIM SÃO POSSÍVEIS
+		System.out.println(c1.motor.carro.motor.carro.motor.carro.motor.carro.motor.giros());
+		
 		
 	}
 }

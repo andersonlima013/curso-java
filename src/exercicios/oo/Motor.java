@@ -2,10 +2,14 @@ package exercicios.oo;
 
 public class Motor {
 
-	
+	final Carro carro; // constante
 	boolean ligado = false;
 	double fatorDeInjecao = 1.0;
 	
+	
+	Motor(Carro carro){
+		this.carro = carro;
+	}
 
 	int giros() {
 		if (!ligado) {
