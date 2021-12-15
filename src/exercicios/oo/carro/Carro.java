@@ -1,4 +1,4 @@
-package exercicios.oo;
+package exercicios.oo.carro;
 
 public class Carro {
 
