@@ -6,7 +6,9 @@ public class Motor {
 	boolean ligado = false;
 	double fatorDeInjecao = 1.0;
 	
-	
+	// Aqui chamamos o método de construção do motor, passando como argumento um Carro. Por isso lá na classe Carro temos a lógica de:
+	// motor = new Motor(this) // no caso esse this aqui se refere a classe Carro que está "se passando" como argumento para ser instanciada
+	// aqui na classe motor.
 	Motor(Carro carro){
 		this.carro = carro;
 	}
