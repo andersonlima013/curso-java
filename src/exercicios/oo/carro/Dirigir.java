@@ -4,8 +4,8 @@ public class Dirigir {
 
 	public static void main(String[] args) {
 		
-		Carro c1 = new Carro(); // Aqui é feita a instancia da classe carro, que por sua vez também chama um método de instancia para a classe
-								// motor, fazendo uma conexão bidirecional chamando apenas esse instancia de carro.
+		Carro c1 = new Carro(); // Aqui é feita a instancia da classe Carro.java, que por sua vez também chama um método de instancia para a classe
+								// Motor.java, fazendo uma conexão bidirecional chamando apenas esse instancia de Carro.java.
 		System.out.println(c1.estaLigado());
 		
 		c1.ligar();
